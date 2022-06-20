@@ -21,30 +21,36 @@ function getImg(data) {
   titre = document.createElement("h1");
   imghead = document.createElement("img1")
   input.innerHTML = ""
+  titre.innerHTML = "bienvenue sur mon stockage d'images";
   header.innerHTML =""
   // img1.src = Images/paysage.jpg
-  titre.innerHTML = "bienvenue sur mon stockage d'images";
   document.body.appendChild(header);
   // image
   var img = document.createElement("img");
   
-  img.src = "/images/paysage.jpg";
+  document.body.appendChild(header)
+  img.src = "/images/XzgI9p.jpg";
   header.appendChild(img);
   header.appendChild(titre);
-  header.appendChild(input)
-  body.appendChild(header)
+  header.appendChild(input);
   
   // h1.innerHTML = data.hits[0].user; // Ajout du nom dans le h1 grace au premier user dans notre objet 0 du tableau " hits "
   
   // setAttribute
-  header.setAttribute("class","txt-center p-5")
-  input.setAttribute("class","txt-center")
+  header.setAttribute("class","txt-center p-5 w-auto")
+  input.setAttribute("class","txt-center mx-5")
   input.setAttribute("placeholder","recherche")
   input.setAttribute("type", "search")
-  titre.setAttribute("class", "text-center mt-5 p-5" )
+  input.setAttribute("id", "recherche")
+  input.setAttribute("onkeyup", "recherche")
+  titre.setAttribute("class", "text-center " )
   img.setAttribute("class", "img-fluid");
- 
- 
+  
+
+  function recherche() {
+    // fetch(response).then
+  }
+  recherche()
     var app = document.createElement("div");
     var cont = document.createElement("div");
     var row = document.createElement("div");
